@@ -27,4 +27,21 @@ void Engine::input()
         m_Car.stopDown();
     }
 
+    if (Keyboard::isKeyPressed(Keyboard::A))
+    {
+        m_Car.moveLeft();
+    }
+    else
+    {
+        m_Car.stopLeft();
+    }
+
+    if (Keyboard::isKeyPressed(Keyboard::D))
+    {
+        m_Car.moveRight();
+    }
+    else
+    {
+        m_Car.stopRight();
+    }
 }

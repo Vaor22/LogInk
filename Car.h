@@ -12,6 +12,8 @@ private:
 
 	bool m_UpPressed;
 	bool m_DownPressed;
+	bool m_RightPressed;
+	bool m_LeftPressed;
 
 	float m_Speed;
 public:
@@ -24,6 +26,12 @@ public:
 
 	void stopUp();
 	void stopDown();
+
+	void moveRight();
+	void moveLeft();
+
+	void stopRight();
+	void stopLeft();
 
 	void update(float elapsedTime);
 };
